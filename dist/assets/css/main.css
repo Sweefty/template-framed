@@ -1,0 +1,299 @@
+/* ======== Red+Gray Theme ==============
+@intro-color: #F5F6F7;
+@intro-text-color: #666;
+@header-color : #B32031;
+@header-text-color : #fff;
+@section-color: #F5F6F7;
+============END RED+Gray THEME ==========
+=======================================*/
+/* ======== Yello + Brown Theme =========
+@intro-color: #F5C000;
+@intro-text-color: #fff;
+@header-color: #82735B;
+@header-text-color : #fff;
+@section-color: #F5F6F7;
+============END Yellow+Brown THEME ======
+=======================================*/
+/* ========== DEFUALT THEME ===============*/
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.7em;
+  font-family: Lato;
+}
+a {
+  text-decoration: none;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*BODY CONTENT*/
+.fixed-foot,
+.fixed-head {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  left: 0;
+  position: fixed;
+}
+.fixed-head {
+  top: 0;
+}
+.fixed-foot {
+  bottom: 0;
+}
+.fixed-menu-button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #ccc;
+  cursor: pointer;
+  z-index: 1;
+}
+.fixed-menu-button span {
+  color: #eee;
+  font-size: 42px;
+  font-weight: 700;
+  display: block;
+  padding: 12px 12px;
+}
+.fixed-menu-button-close {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: #ccc;
+  cursor: pointer;
+  z-index: 1;
+  float: left;
+}
+.fixed-menu-button-close span.close {
+  color: #eee;
+  font-size: 42px;
+  font-weight: 700;
+  display: block;
+  padding: 8px 12px;
+}
+.fixed-overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background: #000;
+  z-index: 2;
+  display: none;
+}
+.fixed-menu {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #bbb;
+  z-index: 2;
+}
+.fixed-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+.fixed-menu ul li {
+  margin: 0 10px;
+}
+.fixed-menu ul li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  border-bottom: 5px solid #ccc;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+.fixed-menu ul li a:hover {
+  background: #ccc;
+}
+.fixed-menu .menu-header {
+  height: 50px;
+  width: 250px;
+  background: #ccc;
+}
+.fixed-menu .menu-header span.text {
+  color: #fff;
+  font-size: 18px;
+  text-indent: 10px;
+  display: block;
+  padding-top: 12px;
+}
+.container {
+  width: 100%;
+  min-height: 1500px;
+  border: 5px solid #ccc;
+  background: #f9f9f9;
+}
+.intro {
+  width: 100%;
+  /*height: 100vh;*/
+  background: #eee;
+}
+.intro h1 {
+  line-height: 52px;
+  font-size: 42px;
+  font-weight: normal;
+  color: #888;
+}
+@media only screen and (max-width: 600px) {
+  .intro h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+.intro h2 {
+  color: #ccc;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.intro .block {
+  padding: 60px;
+}
+@media only screen and (max-width: 600px) {
+  .intro .block {
+    padding: 20px;
+  }
+}
+.intro .button-container {
+  margin-top: 30px;
+}
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+.content .top {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.content .seperator {
+  width: 100%;
+  height: 1px;
+  background: #dedede;
+  margin: 50px auto;
+}
+.content .features {
+  color: #666;
+}
+.content .features .icon {
+  font-size: 64px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.content h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #444;
+}
+@media only screen and (max-width: 600px) {
+  .content h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  .content h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+.content .block {
+  margin-top: 60px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  display: block;
+}
+.content .block2 {
+  color: #666;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 600px) {
+  .content .block2 {
+    padding: 20px;
+  }
+}
+.content .block2 .icon {
+  text-align: center;
+  font-size: 240px;
+  color: #ccc;
+}
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  .content .block2 .icon {
+    font-size: 180px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .content .block2 .icon {
+    font-size: 140px;
+  }
+}
+.content .companies-container {
+  width: 60%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  .content .companies-container {
+    width: 100%;
+  }
+}
+.content .companies-container .block {
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  padding: 20px;
+  height: 70px;
+  text-align: center;
+  opacity: .6;
+}
+.content .companies-container .block:hover {
+  opacity: 1;
+  background: #ddd;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #ccc;
+}
+.footer .footer_content {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+}
+.footer .footer_content span.copy {
+  display: block;
+  float: right;
+  color: #999;
+}
+.footer .footer_content ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.footer .footer_content ul li {
+  list-style: none;
+  float: left;
+}
+.footer .footer_content ul li a {
+  padding-right: 10px;
+  display: block;
+  border-right: 1px solid #bbb;
+  color: #777;
+  margin-right: 10px;
+}
